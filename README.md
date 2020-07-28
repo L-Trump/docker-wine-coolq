@@ -2,6 +2,8 @@
 
 ![Build](https://github.com/CoolQ/docker-wine-coolq/workflows/Build/badge.svg) [![GitHub release](https://img.shields.io/github/release/coolq/docker-wine-coolq.svg)](https://github.com/CoolQ/docker-wine-coolq/releases) ![GitHub](https://img.shields.io/github/license/coolq/docker-wine-coolq.svg) [![Docker pulls](https://img.shields.io/docker/pulls/coolq/wine-coolq.svg)](https://hub.docker.com/r/coolq/wine-coolq) ![Image Size](https://img.shields.io/microbadger/image-size/coolq/wine-coolq.svg)
 
+**2020-7-29: 由于技术限制，酷Q on Docker 未来可能将无法使用。建议使用 Windows 10 / Windows Server 2016 及以上版本的系统运行 酷Q。**
+
 docker-wine-coolq 可以使你通过 Wine 在 Docker 容器中运行 酷Q Air 或 酷Q Pro。本项目仅对 x86_64 平台提供支持，**暂不支持**树莓派、路由器等 Arm 架构硬件。
 
 即使该 dockerfile 仓库使用 GPL 发布，其中下载的软件仍然遵循其最终用户使用许可协议，请确认同意协议后再进行下载使用。
