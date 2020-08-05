@@ -8,11 +8,11 @@ export LC_CTYPE=zh_CN.UTF-8
 export WINEDEBUG=-all
 export XMODIFIERS=@im=fcitx
 
-cqexe=$(basename $(find ~/coolq -maxdepth 1 -type f -name '*.exe' | head -n 1))
+cqexe=$(basename $(find ~/coolq -maxdepth 1 -type f -name 'MiraiOK.exe' | head -n 1))
 
 while true; do
     echo "[CQDaemon] Starting CoolQ ...."
-    wine ~/coolq/$cqexe /account $COOLQ_ACCOUNT &
+    wine ~/coolq/$cqexe &
     echo "[CQDaemon] Started CoolQ ."
     wait
     echo "[CQDaemon] CoolQ exited, maybe updated."

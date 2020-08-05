@@ -14,6 +14,6 @@ jobs:
          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        docker build . --tag coolq/wine-coolq:$GIT_TAG_NAME
+        docker build . --tag ltrump/cqmirai:$GIT_TAG_NAME
         docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-        docker push coolq/wine-coolq:$GIT_TAG_NAME
+        docker push ltrump/cqmirai:$GIT_TAG_NAME

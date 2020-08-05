@@ -38,7 +38,7 @@ RUN chsh -s /bin/bash user && \
     su user -c '/usr/local/bin/winetricks -q /tmp/winhttp_2ksp4.verb' && \
     su user -c '/usr/local/bin/winetricks -q msscript' && \
     su user -c '/usr/local/bin/winetricks -q fontsmooth=rgb' && \
-    wget https://dlsec.cqp.me/docker-simsun -O /tmp/simsun.zip && \
+    wget https://raw.githubusercontent.com/L-Trump/Mirai-Docker/master/source/simsun.zip -O /tmp/simsun.zip && \
     mkdir -p /home/user/.wine/drive_c/windows/Fonts && \
     unzip /tmp/simsun.zip -d /home/user/.wine/drive_c/windows/Fonts && \
     mkdir -p /home/user/.fonts/ && \
@@ -51,6 +51,6 @@ RUN chsh -s /bin/bash user && \
 ENV LANG=zh_CN.UTF-8 \
     LC_ALL=zh_CN.UTF-8 \
     TZ=Asia/Shanghai \
-    COOLQ_URL=http://dlsec.cqp.me/cqa-tuling
+    COOLQ_URL=http://xqh.ma:33001/ltrump-onedrive/mirai.zip
 
 VOLUME ["/home/user/coolq"]
