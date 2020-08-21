@@ -45,7 +45,9 @@ RUN chsh -s /bin/bash user && \
     ln -s /home/user/.wine/drive_c/windows/Fonts/simsun.ttc /home/user/.fonts/ && \
     chown -R user:user /home/user && \
     su user -c 'fc-cache -v' && \
-    mkdir /home/user/coolq && \
+    su user -c 'mkdir /home/user/coolq' && \
+    chown -R user:user /home/user/coolq && \
+    chmod -R 0777 /home/user/coolq && \
     rm -rf /home/user/.cache/winetricks /tmp/* /etc/wgetrc
 
 ENV LANG=zh_CN.UTF-8 \
